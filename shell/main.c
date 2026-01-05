@@ -63,6 +63,7 @@ main (gint    argc,
 
   initialize_dependencies (&argc, &argv);
 
+  g_set_prgname ("org.buddiesofbudgie.ControlCenter");
   application = cc_application_new ();
 
   return g_application_run (G_APPLICATION (application), argc, argv);
