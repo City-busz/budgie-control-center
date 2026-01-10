@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017  Red Hat, Inc.
+ * Copyright (C) 2026 Buddies of Budgie
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -12,23 +12,17 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program; if not, write to the Free Software
- * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- *
+ * along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
 #pragma once
 
-#include <glib-object.h>
-
-#include "cc-display-config-manager.h"
+#include <shell/cc-panel.h>
 
 G_BEGIN_DECLS
 
-#define CC_TYPE_DISPLAY_CONFIG_MANAGER_DBUS (cc_display_config_manager_dbus_get_type ())
-G_DECLARE_FINAL_TYPE (CcDisplayConfigManagerDBus, cc_display_config_manager_dbus,
-                      CC, DISPLAY_CONFIG_MANAGER_DBUS, CcDisplayConfigManager)
-
-CcDisplayConfigManager * cc_display_config_manager_dbus_new (void);
+#define CC_TYPE_NIGHT_LIGHT_PANEL (cc_night_light_panel_get_type ())
+G_DECLARE_FINAL_TYPE (CcNightLightPanel, cc_night_light_panel, CC, NIGHT_LIGHT_PANEL, CcPanel)
 
 G_END_DECLS
+

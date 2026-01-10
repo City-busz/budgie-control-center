@@ -405,7 +405,7 @@ static const gchar * const panel_order[] = {
   /* Devices page */
   "sound",
   "power",
-  "display",
+  "night-light",
   "mouse",
   "keyboard",
   "printers",

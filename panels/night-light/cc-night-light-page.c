@@ -576,7 +576,7 @@ cc_night_light_page_class_init (CcNightLightPageClass *klass)
 
   object_class->finalize = cc_night_light_page_finalize;
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/display/cc-night-light-page.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/control-center/night-light/cc-night-light-page.ui");
 
   gtk_widget_class_bind_template_child (widget_class, CcNightLightPage, adjustment_from_hours);
   gtk_widget_class_bind_template_child (widget_class, CcNightLightPage, adjustment_from_minutes);
@@ -668,7 +668,7 @@ cc_night_light_page_init (CcNightLightPage *self)
 
   /* use custom CSS */
   provider = gtk_css_provider_new ();
-  gtk_css_provider_load_from_resource (provider, "/org/gnome/control-center/display/night-light.css");
+  gtk_css_provider_load_from_resource (provider, "/org/gnome/control-center/night-light/night-light.css");
   gtk_style_context_add_provider_for_screen (gdk_screen_get_default (),
                                              GTK_STYLE_PROVIDER (provider),
                                              GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);

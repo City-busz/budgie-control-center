@@ -16,49 +16,25 @@ i18n.merge_file(
   install_dir: control_center_desktopdir
 )
 
-sources = files(
-  'cc-display-panel.c',
-  'cc-display-arrangement.c',
-  'cc-display-config.c',
-  'cc-display-config-dbus.c',
-  'cc-display-config-manager-dbus.c',
-  'cc-display-config-manager.c',
-  'cc-display-settings.c',
-  'cc-night-light-page.c',
-)
+sources = files('cc-lock-panel.c')
 
-resource_data = files(
-  'cc-display-panel.ui',
-  'cc-display-settings.ui',
-  'cc-night-light-page.ui',
-)
+resource_data = files('cc-lock-panel.ui')
 
 sources += gnome.compile_resources(
   'cc-' + cappletname + '-resources',
   cappletname + '.gresource.xml',
-  source_dir: ['.', 'icons'],
   c_name: 'cc_' + cappletname,
   dependencies: resource_data,
   export: true
 )
 
-deps = common_deps + [
-  colord_dep,
-  gnome_desktop_dep,
-  m_dep,
-  upower_glib_dep
-]
-
-cflags += [
-  '-DDATADIR="@0@"'.format(control_center_datadir)
-]
+cflags += '-DGNOMELOCALEDIR="@0@"'.format(control_center_localedir)
 
 panels_libs += static_library(
   cappletname,
   sources: sources,
-  include_directories: [ top_inc, common_inc ],
-  dependencies: deps,
+  include_directories: [top_inc, common_inc],
+  dependencies: common_deps,
   c_args: cflags
 )
 
-subdir('icons')

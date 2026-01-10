@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 Intel, Inc
+ * Copyright (C) 2026 Buddies of Budgie
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -13,9 +13,6 @@
  *
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
- *
- * Author: Thomas Wood <thomas.wood@intel.com>
- *
  */
 
 #pragma once
@@ -24,7 +21,8 @@
 
 G_BEGIN_DECLS
 
-#define CC_TYPE_DISPLAY_PANEL (cc_display_panel_get_type ())
-G_DECLARE_FINAL_TYPE (CcDisplayPanel, cc_display_panel, CC, DISPLAY_PANEL, CcPanel)
+#define CC_TYPE_LOCK_PANEL (cc_lock_panel_get_type ())
+G_DECLARE_FINAL_TYPE (CcLockPanel, cc_lock_panel, CC, LOCK_PANEL, CcPanel)
 
 G_END_DECLS
+
