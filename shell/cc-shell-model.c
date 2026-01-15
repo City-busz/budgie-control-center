@@ -69,8 +69,8 @@ sort_by_name_with_terms (GtkTreeModel  *model,
 
   for (i = 0; terms[i]; ++i)
     {
-      a_match = strstr (a_name, terms[i]) != NULL;
-      b_match = strstr (b_name, terms[i]) != NULL;
+      a_match = g_strstr_len (a_name, -1, terms[i]) != NULL;
+      b_match = g_strstr_len (b_name, -1, terms[i]) != NULL;
 
       if (a_match && !b_match)
         return -1;
@@ -94,7 +94,7 @@ count_matches (gchar **keywords,
 
   for (i = 0; terms[i]; ++i)
     for (j = 0; keywords[j]; ++j)
-      if (strstr (keywords[j], terms[i]))
+      if (g_strstr_len (keywords[j], -1, terms[i]))
         c += 1;
 
   return c;
@@ -340,28 +340,45 @@ cc_shell_model_iter_matches_search (CcShellModel *model,
 {
   g_autofree gchar *name = NULL;
   g_autofree gchar *description = NULL;
+  g_autofree gchar *id = NULL;
   gboolean result;
   g_auto(GStrv) keywords = NULL;
 
   gtk_tree_model_get (GTK_TREE_MODEL (model), iter,
+                      COL_ID, &id,
                       COL_CASEFOLDED_NAME, &name,
                       COL_CASEFOLDED_DESCRIPTION, &description,
                       COL_KEYWORDS, &keywords,
                       -1);
 
-  result = (strstr (name, term) != NULL);
+  g_debug ("Search check for panel '%s' with term '%s'", id ? id : "(null)", term);
+  g_debug ("  Name: %s", name ? name : "(null)");
+  g_debug ("  Description: %s", description ? description : "(null)");
+
+  result = (g_strstr_len (name, -1, term) != NULL);
 
   if (!result && description)
-    result = (strstr (description, term) != NULL);
+    result = (g_strstr_len (description, -1, term) != NULL);
 
   if (!result && keywords)
     {
       gint i;
 
+      g_debug ("  Checking %d keywords...", g_strv_length (keywords));
       for (i = 0; !result && keywords[i]; i++)
-        result = (strstr (keywords[i], term) == keywords[i]);
+        {
+          g_debug ("    Keyword[%d]: '%s' - checking if starts with '%s'", i, keywords[i], term);
+          result = (g_strstr_len (keywords[i], -1, term) == keywords[i]);
+          if (result)
+            g_debug ("    MATCH FOUND!");
+        }
+    }
+  else if (!keywords)
+    {
+      g_debug ("  No keywords array!");
     }
 
+  g_debug ("  Result: %s", result ? "MATCH" : "no match");
   return result;
 }
 
