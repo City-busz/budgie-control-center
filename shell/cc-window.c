@@ -153,6 +153,12 @@ remove_all_custom_widgets (CcWindow *self)
       widget = g_ptr_array_index (self->custom_widgets, i);
       parent = gtk_widget_get_parent (widget);
 
+      if (!parent)
+        {
+          g_debug ("Widget %p has no parent, skipping removal", widget);
+          continue;
+        }
+
       g_assert (parent == GTK_WIDGET (self->top_right_box) || parent == GTK_WIDGET (self->top_left_box));
       gtk_container_remove (GTK_CONTAINER (parent), widget);
     }
