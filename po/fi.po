@@ -5,15 +5,16 @@
 # 
 # Translators:
 # David Mohammed <fossfreedom@ubuntu.com>, 2022
+# Mirko Jäntti, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: budgie-control-center 1.2.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-23 16:46+0000\n"
+"POT-Creation-Date: 2026-01-17 21:26+0000\n"
 "PO-Revision-Date: 2022-08-16 20:42+0000\n"
-"Last-Translator: David Mohammed <fossfreedom@ubuntu.com>, 2022\n"
+"Last-Translator: Mirko Jäntti, 2025\n"
 "Language-Team: Finnish (https://app.transifex.com/buddiesofbudgie/teams/129844/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +59,6 @@ msgstr "Kaksipuoleinen"
 
 #. Translators: This option sets orientation of print (portrait, landscape...)
 #: panels/printers/pp-options-dialog.c:554
-#: panels/display/cc-display-settings.ui.h:1
 msgid "Orientation"
 msgstr "Suunta"
 
@@ -301,7 +301,7 @@ msgstr "Käänteinen pysty"
 #. Translators: Name of job which makes printer to autoconfigure itself
 #: panels/printers/pp-new-printer.c:1200
 msgid "Automatic configuration"
-msgstr ""
+msgstr "Automaattinen määritys"
 
 #. Translators: %s is the printer name
 #: panels/printers/cc-printers-panel.c:692
@@ -375,7 +375,7 @@ msgstr "Valmis"
 #. Translators: Clicking this button prioritizes printing of this print job
 #: panels/printers/pp-job-row.c:179
 msgid "Move this job to the top of the queue"
-msgstr ""
+msgstr "Siirrä tämä työ jonon ylimmäksi"
 
 #. Translators: The found device is a JetDirect printer
 #: panels/printers/pp-host.c:478
@@ -405,7 +405,6 @@ msgstr "Valitse PPD-tiedosto"
 #: panels/printers/pp-details-dialog.c:235 panels/color/cc-color-panel.c:235
 #: panels/color/cc-color-panel.c:797
 #: panels/background/cc-background-chooser.c:362
-#: panels/display/cc-display-panel.c:1207
 #: panels/user-accounts/cc-avatar-chooser.c:105
 #: panels/user-accounts/cc-avatar-chooser.c:241
 #: panels/user-accounts/cc-user-panel.c:637
@@ -532,7 +531,7 @@ msgstr "Rinnakkaisportti"
 
 #. Translators: The found device is a printer connected via Bluetooth
 #: panels/printers/pp-new-printer-dialog.c:1392
-#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
+#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:2
 msgid "Bluetooth"
 msgstr "Bluetooth"
 
@@ -576,6 +575,30 @@ msgstr "%s — Aktiiviset työt"
 #, c-format
 msgid "Enter credentials to print from %s."
 msgstr "Syötä kirjautumistietosi tulostaaksesi tulostimesta %s."
+
+#: panels/introduction/cc-introduction-panel.c:33
+#: panels/power/budgie-power-panel.desktop.in.in:2
+msgid "Power"
+msgstr "Virranhallinta"
+
+#: panels/introduction/cc-introduction-panel.c:34
+#: panels/sound/budgie-sound-panel.desktop.in.in:2
+msgid "Sound"
+msgstr "Ääni"
+
+#: panels/introduction/cc-introduction-panel.c:35
+#: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
+#: panels/network/budgie-wifi-panel.desktop.in.in:2
+msgid "Wi-Fi"
+msgstr "Wifi"
+
+#: panels/introduction/cc-introduction-panel.c:36
+#: panels/applications/cc-applications-panel.c:855
+#: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
+#: panels/wwan/cc-wwan-network-dialog.ui.h:1
+#: panels/network/budgie-network-panel.desktop.in.in:2
+msgid "Network"
+msgstr "Verkko"
 
 #: panels/wacom/cc-wacom-nav-button.c:84
 #, c-format
@@ -639,7 +662,7 @@ msgstr "Akut"
 #. * https://en.wikipedia.org/wiki/Uninterruptible_power_supply
 #: panels/power/cc-power-panel.c:386
 msgid "UPS"
-msgstr ""
+msgstr "UPS"
 
 #. TRANSLATORS: secondary battery, misc
 #: panels/power/cc-power-panel.c:389 panels/power/cc-battery-row.c:218
@@ -668,11 +691,11 @@ msgid "Nothing"
 msgstr "Ei mitään"
 
 #: panels/power/cc-power-panel.c:861 panels/power/cc-power-panel.c:872
-#: panels/universal-access/cc-ua-panel.c:334
-#: panels/universal-access/cc-ua-panel.c:615
-#: panels/universal-access/cc-ua-panel.c:625
-#: panels/universal-access/cc-ua-panel.c:637
-#: panels/universal-access/cc-ua-panel.c:680 panels/network/net-proxy.c:69
+#: panels/universal-access/cc-ua-panel.c:341
+#: panels/universal-access/cc-ua-panel.c:644
+#: panels/universal-access/cc-ua-panel.c:654
+#: panels/universal-access/cc-ua-panel.c:666
+#: panels/universal-access/cc-ua-panel.c:722 panels/network/net-proxy.c:69
 #: panels/notifications/cc-notifications-panel.c:260
 #: panels/universal-access/cc-ua-panel.ui.h:8
 msgid "Off"
@@ -687,11 +710,11 @@ msgid "When plugged in"
 msgstr "Käytettäessä verkkovirtaa"
 
 #: panels/power/cc-power-panel.c:867 panels/power/cc-power-panel.c:874
-#: panels/universal-access/cc-ua-panel.c:334
-#: panels/universal-access/cc-ua-panel.c:615
-#: panels/universal-access/cc-ua-panel.c:625
-#: panels/universal-access/cc-ua-panel.c:637
-#: panels/universal-access/cc-ua-panel.c:680
+#: panels/universal-access/cc-ua-panel.c:341
+#: panels/universal-access/cc-ua-panel.c:644
+#: panels/universal-access/cc-ua-panel.c:654
+#: panels/universal-access/cc-ua-panel.c:666
+#: panels/universal-access/cc-ua-panel.c:722
 #: panels/notifications/cc-notifications-panel.c:260
 msgid "On"
 msgstr "Päällä"
@@ -713,14 +736,14 @@ msgstr "Ei koskaan"
 msgid "Automatic suspend"
 msgstr "Automaattinen valmiustila"
 
-#: panels/power/cc-power-panel.c:1167
+#: panels/power/cc-power-panel.c:1171
 msgid ""
 "Performance mode temporarily disabled due to high operating temperature."
 msgstr ""
 "Suorituskykytila on poistettu väliaikaisesti käytöstä korkean "
 "käyntilämpötilan vuoksi."
 
-#: panels/power/cc-power-panel.c:1169
+#: panels/power/cc-power-panel.c:1173
 msgid ""
 "Lap detected: performance mode temporarily unavailable. Move the device to a"
 " stable surface to restore."
@@ -728,11 +751,11 @@ msgstr ""
 "Syli havaittu: suorituskykytila väliaikaisesti ei saatavilla. Siirrä laite "
 "tasaiselle alustalle palauttaaksesi suorituskykytilan."
 
-#: panels/power/cc-power-panel.c:1171
+#: panels/power/cc-power-panel.c:1175
 msgid "Performance mode temporarily disabled."
 msgstr "Suorituskykytila väliaikaisesti pois käytöstä."
 
-#: panels/power/cc-power-panel.c:1214
+#: panels/power/cc-power-panel.c:1218
 msgid ""
 "Low battery: power saver enabled. Previous mode will be restored when "
 "battery is sufficiently charged."
@@ -741,13 +764,13 @@ msgstr ""
 "akkua on ladattu riittävästi."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1222
+#: panels/power/cc-power-panel.c:1226
 #, c-format
 msgid "Power Saver mode activated by “%s”."
 msgstr "Virransäästötilan aktivoinut “%s”."
 
 #. translators: "%s" is an application name
-#: panels/power/cc-power-panel.c:1226
+#: panels/power/cc-power-panel.c:1230
 #, c-format
 msgid "Performance mode activated by “%s”."
 msgstr "Suorituskykytilan aktivoinut “%s”."
@@ -1212,9 +1235,34 @@ msgstr "Ei työpöydän taustaa"
 msgid "Select a picture"
 msgstr "Valitse kuva"
 
-#: panels/background/cc-background-panel.c:110
+#: panels/background/cc-background-panel.c:111
 msgid "Current background"
 msgstr "Nykyinen taustakuva"
+
+#. Centered
+#: panels/background/cc-background-panel.c:255
+msgid "Centered"
+msgstr ""
+
+#. Scaled
+#: panels/background/cc-background-panel.c:267
+msgid "Scaled"
+msgstr ""
+
+#. Stretched
+#: panels/background/cc-background-panel.c:279
+msgid "Stretched"
+msgstr ""
+
+#. Zoom
+#: panels/background/cc-background-panel.c:291
+msgid "Zoom"
+msgstr ""
+
+#. Wallpaper
+#: panels/background/cc-background-panel.c:303
+msgid "Wallpaper"
+msgstr ""
 
 #: panels/sound/cc-alert-chooser.c:174
 msgid "Custom"
@@ -1230,56 +1278,6 @@ msgctxt "volume"
 msgid "100%"
 msgstr "100 %"
 
-#: panels/display/cc-display-settings.c:113
-msgctxt "Display rotation"
-msgid "Landscape"
-msgstr "Vaaka"
-
-#: panels/display/cc-display-settings.c:116
-msgctxt "Display rotation"
-msgid "Portrait Right"
-msgstr "Pysty oikea"
-
-#: panels/display/cc-display-settings.c:119
-msgctxt "Display rotation"
-msgid "Portrait Left"
-msgstr "Pysty vasen"
-
-#: panels/display/cc-display-settings.c:122
-msgctxt "Display rotation"
-msgid "Landscape (flipped)"
-msgstr "Vaaka (käännetty)"
-
-#: panels/display/cc-display-settings.c:199
-#, c-format
-msgid "%.2lf Hz"
-msgstr "%.2lf Hz"
-
-#: panels/display/cc-display-panel.c:1218
-#: panels/network/connection-editor/connection-editor.ui.h:2
-msgid "_Apply"
-msgstr "_Toteuta"
-
-#: panels/display/cc-display-panel.c:1239
-msgid "Apply Changes?"
-msgstr "Toteutetaanko muutokset?"
-
-#: panels/display/cc-display-panel.c:1244
-msgid "Changes Cannot be Applied"
-msgstr "Muutoksia ei voitu toteuttaa"
-
-#: panels/display/cc-display-panel.c:1245
-msgid "This could be due to hardware limitations."
-msgstr "Tämä saattaa johtua laitteiston rajoituksista."
-
-#: panels/display/cc-night-light-page.c:627
-msgid "More Warm"
-msgstr "Enemmän lämpöä"
-
-#: panels/display/cc-night-light-page.c:639
-msgid "Less Warm"
-msgstr "Vähemmän lämpöä"
-
 #: panels/keyboard/cc-xkb-modifier-dialog.c:379
 #: panels/sound/cc-alert-chooser.ui.h:1
 #: panels/keyboard/cc-keyboard-shortcut-editor.ui.h:7
@@ -1289,11 +1287,11 @@ msgstr "Ei mikään"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.c:381
 msgid "Layout default"
-msgstr ""
+msgstr "Vakioasettelu"
 
-#: panels/keyboard/cc-keyboard-manager.c:486
-#: panels/keyboard/cc-keyboard-manager.c:494
-#: panels/keyboard/cc-keyboard-manager.c:792
+#: panels/keyboard/cc-keyboard-manager.c:492
+#: panels/keyboard/cc-keyboard-manager.c:500
+#: panels/keyboard/cc-keyboard-manager.c:798
 msgid "Custom Shortcuts"
 msgstr "Omat pikanäppäimet"
 
@@ -1357,7 +1355,7 @@ msgstr ""
 #: panels/keyboard/cc-keyboard-panel.c:71
 msgctxt "keyboard key"
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: panels/keyboard/cc-keyboard-panel.c:72
 #: panels/keyboard/cc-keyboard-panel.c:91
@@ -1615,14 +1613,14 @@ msgstr "Sormenjälkien listaaminen epäonnistui: %s"
 #. enabled using your pam authorization module'
 #: panels/user-accounts/cc-fingerprint-dialog.c:627
 msgid "your pam authorization module"
-msgstr ""
+msgstr "sinun pam valtuutusmoduulisi"
 
 #. TRANSLATORS: fprintd does not have to be translated, the %s is the name of
 #. an executable that is calculated when the app is running
 #: panels/user-accounts/cc-fingerprint-dialog.c:659
 #, c-format
 msgid "Ensure fprintd has been enabled using %s"
-msgstr ""
+msgstr "Varmista että fprintd on otettu käyttöön käyttämällä %s"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:681
 #, c-format
@@ -1688,7 +1686,7 @@ msgstr "Sormenjälkilaitteen tallennustila on täynnä"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:887
 msgid "Fingerprint is a duplicate"
-msgstr ""
+msgstr "Sormenjälki on duplikaatti"
 
 #: panels/user-accounts/cc-fingerprint-dialog.c:891
 msgid "Failed to enroll new fingerprint"
@@ -2073,6 +2071,7 @@ msgstr "Viime viikolla"
 #. shown as the last day of a week on login history dialog.
 #: panels/user-accounts/cc-login-history-dialog.c:82
 #: panels/user-accounts/cc-login-history-dialog.c:86
+#, c-format
 msgctxt "login history week label"
 msgid "%b %e"
 msgstr "%e. %b"
@@ -2134,32 +2133,32 @@ msgstr "Pitkä"
 
 #. translators: the labels will read:
 #. * Cursor Size: Default
-#: panels/universal-access/cc-ua-panel.c:354
+#: panels/universal-access/cc-ua-panel.c:361
 msgctxt "cursor size"
 msgid "Default"
 msgstr "Oletus"
 
-#: panels/universal-access/cc-ua-panel.c:357
+#: panels/universal-access/cc-ua-panel.c:364
 msgctxt "cursor size"
 msgid "Medium"
 msgstr "Keskikoko"
 
-#: panels/universal-access/cc-ua-panel.c:360
+#: panels/universal-access/cc-ua-panel.c:367
 msgctxt "cursor size"
 msgid "Large"
 msgstr "Suuri"
 
-#: panels/universal-access/cc-ua-panel.c:363
+#: panels/universal-access/cc-ua-panel.c:370
 msgctxt "cursor size"
 msgid "Larger"
 msgstr "Suurempi"
 
-#: panels/universal-access/cc-ua-panel.c:366
+#: panels/universal-access/cc-ua-panel.c:373
 msgctxt "cursor size"
 msgid "Largest"
 msgstr "Suurin"
 
-#: panels/universal-access/cc-ua-panel.c:370
+#: panels/universal-access/cc-ua-panel.c:377
 #, c-format
 msgid "%d pixel"
 msgid_plural "%d pixels"
@@ -2189,13 +2188,6 @@ msgstr "Laitteet"
 #: panels/applications/cc-applications-panel.c:851
 msgid "Full access to /dev"
 msgstr "Täysi pääsy kohteeseen /dev"
-
-#: panels/applications/cc-applications-panel.c:855
-#: panels/network/network-mobile.ui.h:7 panels/wwan/cc-wwan-device-page.ui.h:5
-#: panels/wwan/cc-wwan-network-dialog.ui.h:1
-#: panels/network/budgie-network-panel.desktop.in.in:3
-msgid "Network"
-msgstr "Verkko"
 
 #: panels/applications/cc-applications-panel.c:855
 msgid "Has network access"
@@ -2296,7 +2288,7 @@ msgstr "Muut tiedostot"
 #: panels/applications/cc-applications-panel.c:1682
 #: panels/applications/cc-applications-panel.ui.h:26
 #: panels/notifications/cc-notifications-panel.ui.h:4
-#: panels/applications/budgie-applications-panel.desktop.in.in:3
+#: panels/applications/budgie-applications-panel.desktop.in.in:2
 msgid "Applications"
 msgstr "Sovellukset"
 
@@ -2349,8 +2341,8 @@ msgstr ""
 msgid "Copy"
 msgstr "Kopioi"
 
-#: panels/sharing/cc-sharing-panel.c:1718
-#: panels/sharing/budgie-sharing-panel.desktop.in.in:3
+#: panels/sharing/cc-sharing-panel.c:1726
+#: panels/sharing/budgie-sharing-panel.desktop.in.in:2
 msgid "Sharing"
 msgstr "Jakaminen"
 
@@ -2447,6 +2439,14 @@ msgstr "Video-CD"
 msgid "Windows software"
 msgstr "Windows-ohjelmisto"
 
+#: panels/night-light/cc-night-light-page.c:627
+msgid "More Warm"
+msgstr "Enemmän lämpöä"
+
+#: panels/night-light/cc-night-light-page.c:639
+msgid "Less Warm"
+msgstr "Vähemmän lämpöä"
+
 #: panels/region/cc-format-preview.c:135
 msgctxt "measurement format"
 msgid "Imperial"
@@ -2528,6 +2528,7 @@ msgstr "Eilen"
 
 #. Translators: This is a date format string in the style of "Feb 24".
 #: panels/common/cc-util.c:138
+#, c-format
 msgid "%b %e"
 msgstr "%e. %b"
 
@@ -2882,11 +2883,6 @@ msgstr "Valitse henkilökohtainen varmenteesi"
 #: panels/network/wireless-security/eap-method-tls.c:520
 msgid "Choose your private key"
 msgstr "Valitse yksityinen avaimesi"
-
-#: panels/network/cc-wifi-panel.c:549 panels/network/network-wifi.ui.h:4
-#: panels/network/budgie-wifi-panel.desktop.in.in:3
-msgid "Wi-Fi"
-msgstr "Wifi"
 
 #: panels/network/cc-wifi-panel.c:869
 msgid "Stop hotspot and disconnect any users?"
@@ -3411,9 +3407,7 @@ msgctxt "Wifi security"
 msgid "None"
 msgstr "Ei mitään"
 
-#. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/network/connection-editor/ce-page-details.c:156
-#: panels/display/cc-display-panel.ui.h:58
 msgid "Never"
 msgstr "Ei koskaan"
 
@@ -3501,8 +3495,8 @@ msgstr "Tulee olla vähintään 8 merkkiä"
 #, c-format
 msgid "Must have a maximum of %d character"
 msgid_plural "Must have a maximum of %d characters"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Saa sisältää maksimissaan %d merkin"
+msgstr[1] "Saa sisältää maksimissaan %d merkkiä "
 
 #: panels/network/cc-wifi-hotspot-dialog.c:489
 msgid "Turn On Wi-Fi Hotspot?"
@@ -3590,27 +3584,27 @@ msgstr "Vain 4G"
 
 #: panels/wwan/cc-wwan-device.c:997
 msgid "5G Only"
-msgstr ""
+msgstr "Vain 5G"
 
 #: panels/wwan/cc-wwan-device.c:1007
 msgid "2G, 3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1009
 msgid "2G, 3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G, 4G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1011
 msgid "2G, 3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G, 3G (Ensisijainen), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1013
 msgid "2G (Preferred), 3G, 4G, 5G"
-msgstr ""
+msgstr "2G (Ensisijainen), 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1015
 msgid "2G, 3G, 4G, 5G"
-msgstr ""
+msgstr "2G, 3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1022
 msgid "2G, 3G, 4G (Preferred)"
@@ -3630,51 +3624,51 @@ msgstr "2G, 3G, 4G"
 
 #: panels/wwan/cc-wwan-device.c:1035
 msgid "3G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 4G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1037
 msgid "3G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "3G, 4G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1039
 msgid "3G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "3G (Ensisijainen), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1041
 msgid "3G, 4G, 5G"
-msgstr ""
+msgstr "3G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1048
 msgid "2G, 4G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 4G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1050
 msgid "2G, 4G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 4G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1052
 msgid "2G (Preferred), 4G, 5G"
-msgstr ""
+msgstr "2G (Ensisijainen), 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1054
 msgid "2G, 4G, 5G"
-msgstr ""
+msgstr "2G, 4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1061
 msgid "2G, 3G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 3G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1063
 msgid "2G, 3G (Preferred), 5G"
-msgstr ""
+msgstr "2G, 3G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1065
 msgid "2G (Preferred), 3G, 5G"
-msgstr ""
+msgstr "2G (Ensisijainen), 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1067
 msgid "2G, 3G, 5G"
-msgstr ""
+msgstr "2G, 3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1073
 msgid "3G, 4G (Preferred)"
@@ -3714,39 +3708,39 @@ msgstr "2G, 3G"
 
 #: panels/wwan/cc-wwan-device.c:1103
 msgid "2G, 5G (Preferred)"
-msgstr ""
+msgstr "2G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1105
 msgid "2G (Preferred), 5G"
-msgstr ""
+msgstr "2G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1107
 msgid "2G, 5G"
-msgstr ""
+msgstr "2G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1113
 msgid "3G, 5G (Preferred)"
-msgstr ""
+msgstr "3G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1115
 msgid "3G (Preferred), 5G"
-msgstr ""
+msgstr "3G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1117
 msgid "3G, 5G"
-msgstr ""
+msgstr "3G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1123
 msgid "4G, 5G (Preferred)"
-msgstr ""
+msgstr "4G, 5G (Ensisijainen)"
 
 #: panels/wwan/cc-wwan-device.c:1125
 msgid "4G (Preferred), 5G"
-msgstr ""
+msgstr "4G (Ensisijainen), 5G"
 
 #: panels/wwan/cc-wwan-device.c:1127
 msgid "4G, 5G"
-msgstr ""
+msgstr "4G, 5G"
 
 #: panels/wwan/cc-wwan-device.c:1131
 msgctxt "Network mode"
@@ -3836,7 +3830,7 @@ msgstr "PIN-koodin tulee olla 4-8 numeroa pitkä"
 
 #: panels/wwan/cc-wwan-device-page.c:317
 msgid "Unlocking…"
-msgstr ""
+msgstr "Lukitusta avataan..."
 
 #: panels/wwan/cc-wwan-sim-lock-dialog.c:230
 #: panels/wwan/cc-wwan-mode-dialog.ui.h:3
@@ -4095,15 +4089,17 @@ msgstr "Tu_hoa väliaikaistiedostot"
 
 #: panels/usage/cc-usage-panel.c:322
 msgid "Clear File History?"
-msgstr ""
+msgstr "Tyhjennetäänkö tiedostohistoria?"
 
 #: panels/usage/cc-usage-panel.c:323
 msgid "After clearing, lists of recently used files will appear empty."
 msgstr ""
+"Tyhjentämisen jälkeen viimeksi käytettyjen tiedostojen luettelot näkyvät "
+"tyhjinä."
 
 #: panels/usage/cc-usage-panel.c:324
 msgid "_Clear History"
-msgstr ""
+msgstr "_Tyhjennä historia"
 
 #: panels/online-accounts/cc-online-accounts-panel.c:148
 msgctxt "Online Account"
@@ -4128,42 +4124,42 @@ msgstr "Virhe tiliä poistaessa"
 msgid "%s removed"
 msgstr "%s poistettu"
 
-#: shell/cc-application.c:59
+#: shell/cc-application.c:61
 msgid "Display version number"
 msgstr "Näytä versionumero"
 
-#: shell/cc-application.c:60
+#: shell/cc-application.c:62
 msgid "Enable verbose mode"
 msgstr "Ota käyttöön lisätietoja tulostava tila"
 
-#: shell/cc-application.c:61
+#: shell/cc-application.c:63
 msgid "Search for the string"
 msgstr "Etsi merkkijonoa"
 
-#: shell/cc-application.c:62
+#: shell/cc-application.c:64
 msgid "List possible panel names and exit"
 msgstr "Näytä mahdolliset paneelinimet ja lopeta"
 
-#: shell/cc-application.c:63
+#: shell/cc-application.c:65
 msgid "Panel to display"
 msgstr "Näytettävä paneeli"
 
-#: shell/cc-application.c:63
+#: shell/cc-application.c:65
 msgid "[PANEL] [ARGUMENT…]"
 msgstr "[PANEELI] [ARGUMENTTI…]"
 
-#: shell/cc-panel-loader.c:298
+#: shell/cc-panel-loader.c:302
 msgid "Available panels:"
 msgstr "Käytettävissä olevat paneelit:"
 
-#: shell/cc-window.c:309 shell/cc-panel-list.ui.h:1
+#: shell/cc-window.c:310 shell/cc-panel-list.ui.h:1
 msgid "Privacy"
 msgstr "Yksityisyys"
 
-#: shell/cc-window.c:313 shell/cc-window.c:1044 shell/cc-window.ui.h:1
-#: shell/budgie-control-center.desktop.in.in:3
+#: shell/cc-window.c:314 shell/cc-window.c:1205 shell/cc-window.ui.h:1
+#: shell/org.buddiesofbudgie.ControlCenter.desktop.in.in:2
 msgid "Budgie Control Center"
-msgstr ""
+msgstr "Budgie-ohjauskeskus"
 
 #. translators:
 #. * The number of sound outputs on a particular device
@@ -4407,6 +4403,14 @@ msgstr "Salli alla listattujen sovellusten määrittää sijaintisi."
 msgid "No Applications Have Asked for Location Access"
 msgstr "Mikään sovellus ei ole pyytänyt sijainnin käyttöoikeutta"
 
+#: panels/introduction/cc-introduction.ui.h:1
+msgid "Quick Start"
+msgstr ""
+
+#: panels/introduction/cc-introduction.ui.h:2
+msgid "Additional Settings"
+msgstr ""
+
 #: panels/wacom/wacom-stylus-page.ui.h:1 panels/mouse/cc-mouse-panel.ui.h:11
 msgid "Default"
 msgstr "Oletus"
@@ -4496,7 +4500,7 @@ msgid "Bluetooth Settings"
 msgstr "Bluetooth-asetukset"
 
 #: panels/wacom/gnome-wacom-properties.ui.h:9
-#: panels/wacom/budgie-wacom-panel.desktop.in.in:3
+#: panels/wacom/budgie-wacom-panel.desktop.in.in:2
 msgid "Wacom Tablet"
 msgstr "Wacom-piirtopöydät"
 
@@ -4566,64 +4570,62 @@ msgstr ""
 "askelpalautinta."
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
-#. Translators: Option for "Blank screen" in "Power" panel.
 #: panels/power/cc-power-panel.ui.h:2 panels/color/cc-color-panel.ui.h:58
-#: panels/display/cc-display-panel.ui.h:56
 msgid "15 minutes"
 msgstr "15 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:4
 msgid "20 minutes"
-msgstr ""
+msgstr "20 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:6
 msgid "25 minutes"
-msgstr ""
+msgstr "25 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #. Translators: Option for "Lock screen after blank for" in "Screen Lock"
 #. dialog.
 #: panels/power/cc-power-panel.ui.h:8 panels/color/cc-color-panel.ui.h:56
-#: panels/display/cc-display-panel.ui.h:36
+#: panels/lock/cc-lock-panel.ui.h:19
 msgid "30 minutes"
 msgstr "30 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:10
 msgid "45 minutes"
-msgstr ""
+msgstr "45 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
-#: panels/power/cc-power-panel.ui.h:12 panels/display/cc-display-panel.ui.h:38
-#: panels/usage/cc-usage-panel.ui.h:14
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/power/cc-power-panel.ui.h:12 panels/usage/cc-usage-panel.ui.h:14
+#: panels/lock/cc-lock-panel.ui.h:21
 msgid "1 hour"
-msgstr ""
+msgstr "1 tunti"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:14
 msgid "80 minutes"
-msgstr ""
+msgstr "80 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:16
 msgid "90 minutes"
-msgstr ""
+msgstr "90 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:18
 msgid "100 minutes"
-msgstr ""
+msgstr "100 minuuttia"
 
 #. Translators: Option for "Delay" in "Automatic suspend" dialog.
 #: panels/power/cc-power-panel.ui.h:20
 msgid "2 hours"
-msgstr ""
+msgstr "2 tuntia"
 
 #: panels/power/cc-power-panel.ui.h:23
 msgid "Power Mode"
@@ -4930,7 +4932,7 @@ msgstr "Laajan gamutin LCD (RGB LED -taustalamppu)"
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:34
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:36
 msgid "High"
-msgstr ""
+msgstr "Korkea"
 
 #: panels/color/cc-color-panel.ui.h:54
 msgid "40 minutes"
@@ -4938,13 +4940,13 @@ msgstr "40 minuuttia"
 
 #: panels/color/cc-color-panel.ui.h:55
 msgid "Medium"
-msgstr ""
+msgstr "Keskitaso"
 
 #: panels/color/cc-color-panel.ui.h:57
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:33
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:35
 msgid "Low"
-msgstr ""
+msgstr "Matala"
 
 #: panels/color/cc-color-panel.ui.h:59
 msgid "Native to display"
@@ -5024,6 +5026,10 @@ msgid "Turn off the Airplane mode switch to enable Bluetooth."
 msgstr "Poista lentokonetila käytöstä käyttääksesi Bluetoothia."
 
 #: panels/background/cc-background-panel.ui.h:1
+msgid "Style"
+msgstr ""
+
+#: panels/background/cc-background-panel.ui.h:2
 msgid "Add Picture…"
 msgstr "Lisää kuva…"
 
@@ -5069,7 +5075,7 @@ msgstr "Järjestelmän äänenvoimakkuus"
 
 #: panels/sound/cc-sound-panel.ui.h:2
 msgid "Over-Amplification"
-msgstr ""
+msgstr "Ylivahvistaminen"
 
 #: panels/sound/cc-sound-panel.ui.h:4
 #, no-c-format
@@ -5077,6 +5083,9 @@ msgid ""
 "Allows raising the volume above 100%. This can result in a loss of audio "
 "quality; it is better to increase application volume settings, if possible."
 msgstr ""
+"Sallii äänenvoimakkuuden noston yli 100%:n. Tämä voi johtaa äänenlaadun "
+"heikkenemiseen; jos mahdollista, on suositeltavaa nostaa sovelluksen "
+"voimakkuusasetuksia tämän sijaan."
 
 #: panels/sound/cc-sound-panel.ui.h:5
 msgid "Volume Levels"
@@ -5126,262 +5135,6 @@ msgstr "Äänenvoimakkuus"
 msgid "Alert Sound"
 msgstr "Hälytysääni"
 
-#: panels/display/cc-display-settings.ui.h:2
-msgid "Resolution"
-msgstr ""
-
-#: panels/display/cc-display-settings.ui.h:3
-msgid "Refresh Rate"
-msgstr "Päivitystaajuus"
-
-#: panels/display/cc-display-settings.ui.h:4
-msgid "Adjust for TV"
-msgstr "Sovita TV:hen"
-
-#: panels/display/cc-display-settings.ui.h:5
-msgid "Scale"
-msgstr ""
-
-#: panels/display/cc-display-settings.ui.h:6
-msgid "Fractional Scaling"
-msgstr ""
-
-#: panels/display/cc-display-settings.ui.h:7
-msgid ""
-"May increase power usage, lower speed, or reduce display sharpness.\n"
-"        Fractional scaling will disable the lock-screen."
-msgstr ""
-
-#. This cancels the redshift inhibit.
-#: panels/display/cc-night-light-page.ui.h:2
-msgid "Restart Filter"
-msgstr "Käynnistä suodatin uudelleen"
-
-#. Inhibit the redshift functionality until the next day starts
-#: panels/display/cc-night-light-page.ui.h:4
-msgid "Temporarily Disabled Until Tomorrow"
-msgstr "Poistettu väliaikaisesti käytöstä huomiseen asti"
-
-#: panels/display/cc-night-light-page.ui.h:5
-msgid ""
-"Night light makes the screen color warmer. This can help to prevent eye "
-"strain and sleeplessness."
-msgstr ""
-"Yövalo tekee näytön väreistä tavallista lämpimämpiä. Sen on tarkoitus estää "
-"silmien rasittumista ja unettomuutta."
-
-#. This is the redshift functionality where we suppress blue light when the
-#. sun has gone down
-#: panels/display/cc-night-light-page.ui.h:6
-#: panels/display/cc-display-panel.ui.h:22
-msgid "Night Light"
-msgstr "Yövalo"
-
-#: panels/display/cc-night-light-page.ui.h:7
-msgid "Schedule"
-msgstr "Aikataulu"
-
-#: panels/display/cc-night-light-page.ui.h:8
-msgid "Sunset to Sunrise"
-msgstr "Auringonlaskusta auringonnousuun"
-
-#: panels/display/cc-night-light-page.ui.h:9
-msgid "Manual Schedule"
-msgstr "Mukautettu aikataulu"
-
-#: panels/display/cc-night-light-page.ui.h:10
-#: panels/region/cc-format-preview.ui.h:2
-msgid "Times"
-msgstr "Aika"
-
-#: panels/display/cc-night-light-page.ui.h:11
-msgid "From"
-msgstr "Alkaa"
-
-#: panels/display/cc-night-light-page.ui.h:12
-msgid "Hour"
-msgstr "Tunti"
-
-#: panels/display/cc-night-light-page.ui.h:13
-msgid ":"
-msgstr ":"
-
-#: panels/display/cc-night-light-page.ui.h:14
-msgid "Minute"
-msgstr "Minuutti"
-
-#. This is the short form for the time period in the morning
-#: panels/display/cc-night-light-page.ui.h:16
-msgid "AM"
-msgstr "AM"
-
-#. This is the short form for the time period in the afternoon
-#: panels/display/cc-night-light-page.ui.h:18
-msgid "PM"
-msgstr "PM"
-
-#: panels/display/cc-night-light-page.ui.h:19
-msgid "To"
-msgstr "Päättyy"
-
-#: panels/display/cc-night-light-page.ui.h:20
-msgid "Color Temperature"
-msgstr "Värilämpötila"
-
-#: panels/display/cc-display-panel.ui.h:1
-msgid "Display Settings Disabled"
-msgstr ""
-
-#: panels/display/cc-display-panel.ui.h:2
-msgid "Single Display"
-msgstr "Yksi näyttö"
-
-#: panels/display/cc-display-panel.ui.h:3
-msgid "Join Displays"
-msgstr "Liitä näytöt"
-
-#: panels/display/cc-display-panel.ui.h:4
-msgid "Mirror"
-msgstr "Peili"
-
-#: panels/display/cc-display-panel.ui.h:5
-msgid "Display Mode"
-msgstr "Näyttötila"
-
-#: panels/display/cc-display-panel.ui.h:6
-msgid "Contains top bar and Activities"
-msgstr "Sisältää yläpalkin ja Toiminnot"
-
-#: panels/display/cc-display-panel.ui.h:7
-msgid "Primary Display"
-msgstr "Ensisijainen näyttö"
-
-#: panels/display/cc-display-panel.ui.h:8
-msgid ""
-"Drag displays to match your physical display setup. Select a display to "
-"change its settings."
-msgstr ""
-"Vedä näytöt vastaamaan näyttöjesi järjestystä. Valitse näyttö muuttaaksesi "
-"sen asetuksia."
-
-#: panels/display/cc-display-panel.ui.h:9
-msgid "Display Arrangement"
-msgstr "Näyttöjen järjestys"
-
-#: panels/display/cc-display-panel.ui.h:10
-msgid "Active Display"
-msgstr "Aktiivinen näyttö"
-
-#: panels/display/cc-display-panel.ui.h:11
-msgid "Display Configuration"
-msgstr "Näyttömääritykset"
-
-#: panels/display/cc-display-panel.ui.h:12
-msgid "Blank Screen Delay"
-msgstr "Tyhjän näytön viive"
-
-#: panels/display/cc-display-panel.ui.h:13
-msgid "Period of inactivity after which the screen will go blank."
-msgstr "Toimettomuuden kesto, kunnes näyttö pimennetään."
-
-#: panels/display/cc-display-panel.ui.h:14
-msgid "Automatic Screen _Lock"
-msgstr "_Automaattinen näytön lukitus"
-
-#: panels/display/cc-display-panel.ui.h:15
-msgid "Automatic _Screen Lock Delay"
-msgstr "_Automaattisen näytön lukituksen viive"
-
-#: panels/display/cc-display-panel.ui.h:16
-msgid ""
-"Period after the screen blanks when the screen is automatically locked."
-msgstr "Näytön pimennyksen kesto, kunnes näyttö lukitaan automaattisesti."
-
-#: panels/display/cc-display-panel.ui.h:17
-msgid "Show _Notifications on Lock Screen"
-msgstr "_Näytä ilmoitukset lukitusnäytöllä"
-
-#: panels/display/cc-display-panel.ui.h:18
-msgid "Forbid new _USB devices"
-msgstr "Estä uudet US_B-laitteet"
-
-#: panels/display/cc-display-panel.ui.h:19
-msgid ""
-"Prevent new USB devices from interacting with the system when the screen is "
-"locked."
-msgstr ""
-"Estä uusien USB-laitteiden vuorovaikutus järjestelmään, kun näyttö on "
-"lukittu."
-
-#: panels/display/cc-display-panel.ui.h:20
-#: panels/display/budgie-display-panel.desktop.in.in:3
-msgid "Displays"
-msgstr "Näytöt"
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#: panels/display/cc-display-panel.ui.h:24
-msgid "Screen Turns Off"
-msgstr ""
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#: panels/display/cc-display-panel.ui.h:26
-msgid "30 seconds"
-msgstr ""
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:28
-#: panels/display/cc-display-panel.ui.h:40
-msgid "1 minute"
-msgstr ""
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:30
-#: panels/display/cc-display-panel.ui.h:42
-msgid "2 minutes"
-msgstr ""
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:32
-#: panels/display/cc-display-panel.ui.h:44
-msgid "3 minutes"
-msgstr ""
-
-#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
-#. dialog.
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:34
-#: panels/display/cc-display-panel.ui.h:48
-msgid "5 minutes"
-msgstr ""
-
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:46
-msgid "4 minutes"
-msgstr ""
-
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:50
-msgid "8 minutes"
-msgstr ""
-
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:52
-msgid "10 minutes"
-msgstr ""
-
-#. Translators: Option for "Blank screen" in "Power" panel.
-#: panels/display/cc-display-panel.ui.h:54
-msgid "12 minutes"
-msgstr ""
-
 #: panels/keyboard/cc-keyboard-panel.ui.h:1
 msgid "Input Sources"
 msgstr "Syötelähteet"
@@ -5417,7 +5170,7 @@ msgstr "Katsele ja mukauta pikanäppäimiä"
 
 #: panels/keyboard/cc-xkb-modifier-dialog.ui.h:1
 msgid "Use layout default"
-msgstr ""
+msgstr "Käytä asettelun vakiota"
 
 #: panels/keyboard/cc-input-chooser.ui.h:1
 msgid "Add an Input Source"
@@ -5882,11 +5635,11 @@ msgstr "_Paksuus:"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:18
 msgid "Thin"
-msgstr ""
+msgstr "Ohut"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:19
 msgid "Thick"
-msgstr ""
+msgstr "Paksu"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:20
 msgid "_Length:"
@@ -5924,11 +5677,11 @@ msgstr "_Kontrasti:"
 #. The contrast scale goes from Color to None (grayscale)
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:30
 msgid "Co_lor"
-msgstr ""
+msgstr "Vä_ri"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:32
 msgid "Full"
-msgstr ""
+msgstr "Täysi"
 
 #: panels/universal-access/cc-zoom-options-dialog.ui.h:37
 msgid "Color Effects:"
@@ -5976,7 +5729,7 @@ msgstr "V_iiveen kesto:"
 #: panels/universal-access/cc-pointing-dialog.ui.h:5
 #: panels/universal-access/cc-pointing-dialog.ui.h:11
 msgid "Short"
-msgstr ""
+msgstr "Lyhyt"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:10
 msgid "Slow keys typing delay"
@@ -5987,7 +5740,7 @@ msgstr "Hitaiden näppäinten kirjoitusviive"
 #: panels/universal-access/cc-pointing-dialog.ui.h:7
 #: panels/universal-access/cc-pointing-dialog.ui.h:12
 msgid "Long"
-msgstr ""
+msgstr "Pitkä"
 
 #: panels/universal-access/cc-typing-dialog.ui.h:12
 msgid "Beep when a key is pr_essed"
@@ -6077,11 +5830,11 @@ msgstr "Liikkeen _kynnysarvo:"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:14
 msgid "Small"
-msgstr ""
+msgstr "Pieni"
 
 #: panels/universal-access/cc-pointing-dialog.ui.h:15
 msgid "Large"
-msgstr ""
+msgstr "Suuri"
 
 #: panels/universal-access/cc-visual-alerts-dialog.ui.h:1
 msgid "Visual Alerts"
@@ -6307,17 +6060,17 @@ msgstr ""
 "sovelluksen vaatimat pakolliset oikeudet."
 
 #: panels/applications/cc-applications-panel.ui.h:5
-#: panels/camera/budgie-camera-panel.desktop.in.in:3
+#: panels/camera/budgie-camera-panel.desktop.in.in:2
 msgid "Camera"
 msgstr "Kamera"
 
 #: panels/applications/cc-applications-panel.ui.h:7
-#: panels/microphone/budgie-microphone-panel.desktop.in.in:3
+#: panels/microphone/budgie-microphone-panel.desktop.in.in:2
 msgid "Microphone"
 msgstr "Mikrofoni"
 
 #: panels/applications/cc-applications-panel.ui.h:8
-#: panels/location/budgie-location-panel.desktop.in.in:3
+#: panels/location/budgie-location-panel.desktop.in.in:2
 msgid "Location Services"
 msgstr "Sijaintipalvelut"
 
@@ -6351,7 +6104,7 @@ msgid "Search"
 msgstr "Haku"
 
 #: panels/applications/cc-applications-panel.ui.h:15
-#: panels/notifications/budgie-notifications-panel.desktop.in.in:3
+#: panels/notifications/budgie-notifications-panel.desktop.in.in:2
 msgid "Notifications"
 msgstr "Ilmoitukset"
 
@@ -6445,7 +6198,7 @@ msgstr "_Tiedostonjako"
 
 #: panels/sharing/cc-sharing-panel.ui.h:3
 msgid "Remote _Desktop"
-msgstr ""
+msgstr "Etä _työpöytä"
 
 #: panels/sharing/cc-sharing-panel.ui.h:4
 msgid "_Media Sharing"
@@ -6473,38 +6226,42 @@ msgstr "Etäkirjautuminen"
 
 #: panels/sharing/cc-sharing-panel.ui.h:11
 msgid "Remote Desktop"
-msgstr ""
+msgstr "Etätyöpöytä"
 
 #: panels/sharing/cc-sharing-panel.ui.h:12
 msgid ""
 "Remote desktop allows viewing and controlling your desktop from another "
 "computer."
 msgstr ""
+"Etätyöpöytä mahdollistaa työpöydän tarkastelun ja ohjaamisen toiselta "
+"tietokoneelta."
 
 #: panels/sharing/cc-sharing-panel.ui.h:13
 msgid "Enable or disable remote desktop connections to this computer."
-msgstr ""
+msgstr "Salli tai kiellä etätyöpöytäyhteydet tähän tietokoneeseen."
 
 #: panels/sharing/cc-sharing-panel.ui.h:14
 msgid "Enable Legacy VNC Protocol"
-msgstr ""
+msgstr "Ota perinteinen VNC-protokolla käyttöön"
 
 #: panels/sharing/cc-sharing-panel.ui.h:15
 msgid "Remote Control"
-msgstr ""
+msgstr "Etäohjaus"
 
 #: panels/sharing/cc-sharing-panel.ui.h:16
 msgid "Allows remote connections to control the screen."
-msgstr ""
+msgstr "Mahdolistaa näytön ohjaamisen etäyhteydellä"
 
 #: panels/sharing/cc-sharing-panel.ui.h:17
 msgid "How to Connect"
-msgstr ""
+msgstr "Kuinka yhdistää"
 
 #: panels/sharing/cc-sharing-panel.ui.h:18
 msgid ""
 "Connect to this computer using the device name or remote desktop address."
 msgstr ""
+"Yhdistä tähän tietokoneeseen käyttämällä laitenimeä tai etätyöpöydän "
+"osoitetta"
 
 #: panels/sharing/cc-sharing-panel.ui.h:19
 #: panels/info-overview/cc-info-overview-panel.ui.h:1
@@ -6513,37 +6270,39 @@ msgstr "Laitteen nimi"
 
 #: panels/sharing/cc-sharing-panel.ui.h:20
 msgid "Remote Desktop Address"
-msgstr ""
+msgstr "Etätyöpöydän osoite"
 
 #: panels/sharing/cc-sharing-panel.ui.h:21
 msgid "VNC Address"
-msgstr ""
+msgstr "VNC-osoite"
 
 #: panels/sharing/cc-sharing-panel.ui.h:22
 msgid "Authentication"
-msgstr ""
+msgstr "Todennus"
 
 #: panels/sharing/cc-sharing-panel.ui.h:23
 msgid "The user name and password are required to connect to this computer."
-msgstr ""
+msgstr "Käyttäjänimi ja salasana vaaditaan yhdistääksesi tähän tietokoneeseen"
 
 #: panels/sharing/cc-sharing-panel.ui.h:24
 msgid "User Name"
-msgstr ""
+msgstr "Käyttäjänimi"
 
 #: panels/sharing/cc-sharing-panel.ui.h:26
 msgid "Verify Encryption"
-msgstr ""
+msgstr "Vahvista salaus"
 
 #: panels/sharing/cc-sharing-panel.ui.h:27
 msgid "Encryption Fingerprint"
-msgstr ""
+msgstr "Salauksen sormenjälki"
 
 #: panels/sharing/cc-sharing-panel.ui.h:28
 msgid ""
 "The encryption fingerprint can be seen in connecting clients and should be "
 "identical"
 msgstr ""
+"Salauksen sormenjäljen voi nähdä yhdistävissä laitteissa ja sen tulisi olla "
+"identtinen"
 
 #: panels/sharing/cc-sharing-panel.ui.h:29
 msgid "Media Sharing"
@@ -6610,6 +6369,80 @@ msgstr "_Toiminto:"
 msgid "_Type:"
 msgstr "_Tyyppi:"
 
+#. This cancels the redshift inhibit.
+#: panels/night-light/cc-night-light-page.ui.h:2
+msgid "Restart Filter"
+msgstr "Käynnistä suodatin uudelleen"
+
+#. Inhibit the redshift functionality until the next day starts
+#: panels/night-light/cc-night-light-page.ui.h:4
+msgid "Temporarily Disabled Until Tomorrow"
+msgstr "Poistettu väliaikaisesti käytöstä huomiseen asti"
+
+#: panels/night-light/cc-night-light-page.ui.h:5
+msgid ""
+"Night light makes the screen color warmer. This can help to prevent eye "
+"strain and sleeplessness."
+msgstr ""
+"Yövalo tekee näytön väreistä tavallista lämpimämpiä. Sen on tarkoitus estää "
+"silmien rasittumista ja unettomuutta."
+
+#: panels/night-light/cc-night-light-page.ui.h:6
+#: panels/night-light/budgie-night-light-panel.desktop.in.in:2
+msgid "Night Light"
+msgstr "Yövalo"
+
+#: panels/night-light/cc-night-light-page.ui.h:7
+msgid "Schedule"
+msgstr "Aikataulu"
+
+#: panels/night-light/cc-night-light-page.ui.h:8
+msgid "Sunset to Sunrise"
+msgstr "Auringonlaskusta auringonnousuun"
+
+#: panels/night-light/cc-night-light-page.ui.h:9
+msgid "Manual Schedule"
+msgstr "Mukautettu aikataulu"
+
+#: panels/night-light/cc-night-light-page.ui.h:10
+#: panels/region/cc-format-preview.ui.h:2
+msgid "Times"
+msgstr "Aika"
+
+#: panels/night-light/cc-night-light-page.ui.h:11
+msgid "From"
+msgstr "Alkaa"
+
+#: panels/night-light/cc-night-light-page.ui.h:12
+msgid "Hour"
+msgstr "Tunti"
+
+#: panels/night-light/cc-night-light-page.ui.h:13
+msgid ":"
+msgstr ":"
+
+#: panels/night-light/cc-night-light-page.ui.h:14
+msgid "Minute"
+msgstr "Minuutti"
+
+#. This is the short form for the time period in the morning
+#: panels/night-light/cc-night-light-page.ui.h:16
+msgid "AM"
+msgstr "AM"
+
+#. This is the short form for the time period in the afternoon
+#: panels/night-light/cc-night-light-page.ui.h:18
+msgid "PM"
+msgstr "PM"
+
+#: panels/night-light/cc-night-light-page.ui.h:19
+msgid "To"
+msgstr "Päättyy"
+
+#: panels/night-light/cc-night-light-page.ui.h:20
+msgid "Color Temperature"
+msgstr "Värilämpötila"
+
 #: panels/region/cc-format-chooser.ui.h:5
 msgid ""
 "Choose the format for numbers, dates and currencies. Changes take effect on "
@@ -6620,7 +6453,7 @@ msgstr ""
 
 #: panels/region/cc-format-chooser.ui.h:6
 msgid "Search locales…"
-msgstr ""
+msgstr "Hae lokaaleja..."
 
 #: panels/region/cc-format-chooser.ui.h:7
 msgid "Common Formats"
@@ -6731,7 +6564,7 @@ msgstr "Käyttöjärjestelmän nimi"
 #. translators: this field contains the distro build ID
 #: panels/info-overview/cc-info-overview-panel.ui.h:11
 msgid "OS Build ID"
-msgstr ""
+msgstr "Käyttöjärjestelmän koontitunniste"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:12
 msgid "OS Type"
@@ -6747,7 +6580,7 @@ msgstr "Virtualisointi"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:15
 msgid "Kernel Version"
-msgstr ""
+msgstr "Ytimen versio"
 
 #: panels/info-overview/cc-info-overview-panel.ui.h:16
 msgid "Software Updates"
@@ -7120,6 +6953,10 @@ msgstr "Automaattinen, vain DHCP"
 msgid "Prefix"
 msgstr "Etuliite"
 
+#: panels/network/connection-editor/connection-editor.ui.h:2
+msgid "_Apply"
+msgstr "_Toteuta"
+
 #: panels/network/connection-editor/details-page.ui.h:1
 #: panels/wwan/cc-wwan-details-dialog.ui.h:5
 msgid "Signal Strength"
@@ -7170,7 +7007,7 @@ msgstr "Verkon nimi"
 
 #: panels/network/network-wifi.ui.h:2
 msgid "Security type"
-msgstr ""
+msgstr "Suojauksen tyyppi"
 
 #: panels/network/network-wifi.ui.h:5
 msgid "Turn Wi-Fi off"
@@ -7521,7 +7358,7 @@ msgid "December"
 msgstr "Joulukuu"
 
 #: panels/datetime/cc-datetime-panel.ui.h:13
-#: panels/datetime/budgie-datetime-panel.desktop.in.in:3
+#: panels/datetime/budgie-datetime-panel.desktop.in.in:2
 msgid "Date & Time"
 msgstr "Päivä ja aika"
 
@@ -7619,12 +7456,12 @@ msgstr "_Lukitusnäytön ilmoitukset"
 #. This is the per application switch for message tray usage.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:2
 msgid "_Notifications"
-msgstr ""
+msgstr "_Ilmoitukset"
 
 #. This is the setting to configure sounds associated with notifications.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:4
 msgid "Sound _Alerts"
-msgstr ""
+msgstr "Ääni _ilmoitukset"
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:5
 msgid "Notification _Popups"
@@ -7641,11 +7478,11 @@ msgstr ""
 #. screen.
 #: panels/notifications/cc-app-notifications-dialog.ui.h:8
 msgid "Show Message _Content in Popups"
-msgstr ""
+msgstr "Näytä viestin _sisältö ponnahtavissa ilmoituksissa."
 
 #: panels/notifications/cc-app-notifications-dialog.ui.h:10
 msgid "Show Message C_ontent on Lock Screen"
-msgstr ""
+msgstr "Näytä viestin s_isältö lukitusnäytöllä."
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:1
 msgid "_Web"
@@ -7653,7 +7490,7 @@ msgstr "_Verkko"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:2
 msgid "_Files"
-msgstr ""
+msgstr "_Tiedostot"
 
 #: panels/default-apps/cc-default-apps-panel.ui.h:3
 msgid "_Mail"
@@ -7766,19 +7603,19 @@ msgstr "Kaksoisnapsautuksen aikaraja"
 
 #: panels/mouse/cc-mouse-panel.ui.h:9
 msgid "Acceleration Profile"
-msgstr ""
+msgstr "Kiihdytysprofiili"
 
 #: panels/mouse/cc-mouse-panel.ui.h:10
 msgid "How the pointer moves when you move the mouse."
-msgstr ""
+msgstr "Kuinka osoitin liikkuu kun liikutat hiirtä."
 
 #: panels/mouse/cc-mouse-panel.ui.h:12
 msgid "Flat"
-msgstr ""
+msgstr "Tasainen"
 
 #: panels/mouse/cc-mouse-panel.ui.h:13
 msgid "Adaptive"
-msgstr ""
+msgstr "Mukautuva"
 
 #. Translators: This switch reverses the scrolling direction for touchpads.
 #. The term used comes from OS X so use the same translation if possible.
@@ -7796,7 +7633,7 @@ msgstr "Kosketuslevy"
 
 #: panels/mouse/cc-mouse-panel.ui.h:18
 msgid "Disable Touchpad While Typing"
-msgstr ""
+msgstr "Kosketuslevy pois käytöstä kirjoittaessa"
 
 #: panels/mouse/cc-mouse-panel.ui.h:19
 msgid "Touchpad Speed"
@@ -7804,28 +7641,30 @@ msgstr "Kosketuslevyn nopeus"
 
 #: panels/mouse/cc-mouse-panel.ui.h:20
 msgid "Touchpad Click Method"
-msgstr ""
+msgstr "Kosketuslevyn klikkauksen metodi"
 
 #: panels/mouse/cc-mouse-panel.ui.h:21
 msgid ""
 "Create button behavior (left, middle and right) using the chosen action."
 msgstr ""
+"Luo painikkeiden käytösmalleja (vasen, keski ja oikea) käyttämällä valittua "
+"toimintoa."
 
 #: panels/mouse/cc-mouse-panel.ui.h:22
 msgid "Use the touchpad default"
-msgstr ""
+msgstr "Käytä kosketuslevyn vakiota"
 
 #: panels/mouse/cc-mouse-panel.ui.h:23
 msgid "No buttons created"
-msgstr ""
+msgstr "Painikkeita ei luotu"
 
 #: panels/mouse/cc-mouse-panel.ui.h:24
 msgid "Left, middle and right areas"
-msgstr ""
+msgstr "Alueet vasemmalla, keskellä ja oikealla"
 
 #: panels/mouse/cc-mouse-panel.ui.h:25
 msgid "One, two and three fingers"
-msgstr ""
+msgstr "Yksi, kaksi ja kolme sormea"
 
 #: panels/mouse/cc-mouse-panel.ui.h:26
 msgid "Tap to Click"
@@ -7911,62 +7750,120 @@ msgstr "_Poista väliaikaistiedostot…"
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:16 panels/usage/cc-usage-panel.ui.h:34
 msgid "1 day"
-msgstr ""
+msgstr "1 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:18
 msgid "2 days"
-msgstr ""
+msgstr "2 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:20
 msgid "3 days"
-msgstr ""
+msgstr "3 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:22
 msgid "4 days"
-msgstr ""
+msgstr "4 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:24
 msgid "5 days"
-msgstr ""
+msgstr "5 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:26
 msgid "6 days"
-msgstr ""
+msgstr "6 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:28 panels/usage/cc-usage-panel.ui.h:36
 msgid "7 days"
-msgstr ""
+msgstr "7 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #: panels/usage/cc-usage-panel.ui.h:30
 msgid "14 days"
-msgstr ""
+msgstr "14 päivän"
 
 #. Translators: Option for "Purge After" in "Purge Trash & Temporary Files"
 #. dialog.
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:32 panels/usage/cc-usage-panel.ui.h:38
 msgid "30 days"
-msgstr ""
+msgstr "30 päivän"
 
 #. Translators: Option for "Retain History" in "Usage & History" dialog.
 #: panels/usage/cc-usage-panel.ui.h:40
 msgid "Forever"
+msgstr "Ikuisesti"
+
+#: panels/lock/cc-lock-panel.ui.h:1
+#: panels/lock/budgie-lock-panel.desktop.in.in:2
+msgid "Screen Lock"
 msgstr ""
+
+#: panels/lock/cc-lock-panel.ui.h:2
+msgid "Configure when the screen locks automatically to protect your privacy."
+msgstr ""
+
+#: panels/lock/cc-lock-panel.ui.h:3
+msgid "Automatic Screen _Lock"
+msgstr "_Automaattinen näytön lukitus"
+
+#: panels/lock/cc-lock-panel.ui.h:4
+msgid "Automatic _Screen Lock Delay"
+msgstr "_Automaattisen näytön lukituksen viive"
+
+#: panels/lock/cc-lock-panel.ui.h:5
+msgid ""
+"Period after the screen blanks when the screen is automatically locked."
+msgstr "Näytön pimennyksen kesto, kunnes näyttö lukitaan automaattisesti."
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:7
+msgid "Screen Turns Off"
+msgstr "Näyttö sammuu"
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:9
+msgid "30 seconds"
+msgstr "30 sekunnissa"
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:11
+msgid "1 minute"
+msgstr "1 minuutissa"
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:13
+msgid "2 minutes"
+msgstr "2 minuutissa"
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:15
+msgid "3 minutes"
+msgstr "3 minuutissa"
+
+#. Translators: Option for "Lock screen after blank for" in "Screen Lock"
+#. dialog.
+#: panels/lock/cc-lock-panel.ui.h:17
+msgid "5 minutes"
+msgstr "5 minuutissa"
 
 #: panels/online-accounts/online-accounts.ui.h:2
 msgid "Connect to your data in the cloud"
@@ -7990,15 +7887,15 @@ msgstr "Lopeta"
 
 #: shell/help-overlay.ui.h:4
 msgid "Panels"
-msgstr ""
+msgstr "Paneelit"
 
 #: shell/help-overlay.ui.h:5
 msgid "Go back to previous panel"
-msgstr ""
+msgstr "Takaisin aiempaan paneeliin"
 
 #: shell/help-overlay.ui.h:6
 msgid "Cancel search"
-msgstr ""
+msgstr "Peruuta haku"
 
 #: shell/cc-window.ui.h:2
 msgid "All Settings"
@@ -8026,134 +7923,127 @@ msgstr ""
 msgid "Help"
 msgstr "Ohje"
 
-#: panels/printers/budgie-printers-panel.desktop.in.in:3
+#: panels/printers/budgie-printers-panel.desktop.in.in:2
 msgid "Printers"
 msgstr "Tulostimet"
 
-#: panels/printers/budgie-printers-panel.desktop.in.in:4
+#: panels/printers/budgie-printers-panel.desktop.in.in:3
 msgid "Add printers, view printer jobs and decide how you want to print"
 msgstr "Lisää tulostimia, seuraa tulostustöitä ja määritä tulostusasetukset"
 
 #. Translators: Search terms to find the Printers panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/printers/budgie-printers-panel.desktop.in.in:16
+#: panels/printers/budgie-printers-panel.desktop.in.in:15
 msgid "Printer;Queue;Print;Paper;Ink;Toner;"
 msgstr ""
 "Tulostin;jono;tulosta;paperi;muste;värikasetti;Printer;Queue;Print;Paper;Ink;Toner;"
 
-#: panels/location/budgie-location-panel.desktop.in.in:4
+#: panels/location/budgie-location-panel.desktop.in.in:3
 msgid "Protect your location information"
 msgstr "Suojaa sijaintitietoasi"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/location/budgie-location-panel.desktop.in.in:16
-#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:16
-#: panels/usage/budgie-usage-panel.desktop.in.in:16
+#: panels/location/budgie-location-panel.desktop.in.in:15
+#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:15
+#: panels/usage/budgie-usage-panel.desktop.in.in:15
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;"
 msgstr ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;privacy;näyttö;lukitus;diagnostikka;kaatuminen;yksityinen;viimeisimmät;väliaikset;nimi;verkko;identiteetti;yksityisyys;tietosuoja;"
 
-#: panels/wacom/budgie-wacom-panel.desktop.in.in:4
+#: panels/introduction/budgie-introduction-panel.desktop.in.in:2
+msgid "Introduction"
+msgstr ""
+
+#: panels/introduction/budgie-introduction-panel.desktop.in.in:3
+msgid "Get started with Budgie Desktop"
+msgstr ""
+
+#. Translators: Search terms to find the Introduction panel
+#: panels/introduction/budgie-introduction-panel.desktop.in.in:13
+msgid "welcome;getting started;tour;first time;setup;guide;"
+msgstr ""
+
+#: panels/wacom/budgie-wacom-panel.desktop.in.in:3
 msgid "Set button mappings and adjust stylus sensitivity for graphics tablets"
 msgstr "Aseta piirtopöydän painikkeet ja kynän herkkyys"
 
 #. Translators: Search terms to find the Wacom Tablet panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
-#: panels/wacom/budgie-wacom-panel.desktop.in.in:15
+#: panels/wacom/budgie-wacom-panel.desktop.in.in:14
 msgid "Tablet;Wacom;Stylus;Eraser;Mouse;"
 msgstr "Piirtopöytä;Wacom;Stylus;Eraser;Hiiri;Tablet;Mouse;"
 
 #: panels/power/budgie-power-panel.desktop.in.in:3
-msgid "Power"
-msgstr "Virranhallinta"
-
-#: panels/power/budgie-power-panel.desktop.in.in:4
 msgid "View your battery status and change power saving settings"
 msgstr "Tarkkaile akkusi tilaa ja muuta virransäästöasetuksia"
 
 #. Translators: Search terms to find the Power panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/power/budgie-power-panel.desktop.in.in:15
+#: panels/power/budgie-power-panel.desktop.in.in:14
 msgid ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;"
 msgstr ""
 "Power;Sleep;Suspend;Hibernate;Battery;Brightness;Dim;Blank;Monitor;DPMS;Idle;Energy;virta;uni;valmiustila;lepotila;akku;kirkkaus;himmennys;tyhjä;näyttö;jouten;virransäästö;virranhallinta;"
 
-#: panels/color/budgie-color-panel.desktop.in.in:3
+#: panels/color/budgie-color-panel.desktop.in.in:2
 msgid "Color"
 msgstr "Värit"
 
-#: panels/color/budgie-color-panel.desktop.in.in:4
+#: panels/color/budgie-color-panel.desktop.in.in:3
 msgid ""
 "Calibrate the color of your devices, such as displays, cameras or printers"
 msgstr "Kalibroi laitteidesi, kuten näytön, kameran ja tulostimen värejä"
 
 #. Translators: Search terms to find the Color panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/color/budgie-color-panel.desktop.in.in:15
+#: panels/color/budgie-color-panel.desktop.in.in:14
 msgid "Color;ICC;Profile;Calibrate;Printer;Display;"
 msgstr ""
 "Väri;ICC;color;profiili;kalibrointi;Calibrate;Tulostin;Printer;Näyttö;"
 
-#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:4
+#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:3
 msgid "Turn Bluetooth on and off and connect your devices"
 msgstr "Kytke Bluetooth päälle tai pois ja yhdistä laitteita"
 
 #. Translators: Search terms to find the Bluetooth panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:15
+#: panels/bluetooth/budgie-bluetooth-panel.desktop.in.in:14
 msgid "share;sharing;bluetooth;obex;"
 msgstr "share;sharing;bluetooth;obex;jakaminen;jaot;"
 
-#: panels/background/budgie-background-panel.desktop.in.in:3
+#: panels/background/budgie-background-panel.desktop.in.in:2
 msgid "Background"
 msgstr "Taustakuva"
 
-#: panels/background/budgie-background-panel.desktop.in.in:4
+#: panels/background/budgie-background-panel.desktop.in.in:3
 msgid "Change your background image to a wallpaper or photo"
 msgstr "Vaihda taustakuva"
 
 #. Translators: Search terms to find the Background panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/background/budgie-background-panel.desktop.in.in:15
+#: panels/background/budgie-background-panel.desktop.in.in:14
 msgid "Wallpaper;Screen;Desktop;"
 msgstr "Taustakuva;Näyttö;Työpöytä;Wallpaper;Screen;Desktop;"
 
 #: panels/sound/budgie-sound-panel.desktop.in.in:3
-msgid "Sound"
-msgstr "Ääni"
-
-#: panels/sound/budgie-sound-panel.desktop.in.in:4
 msgid "Change sound levels, inputs, outputs, and alert sounds"
 msgstr "Muuta äänenvoimakkuutta, sisään- ja ulostuloja sekä äänitapahtumia"
 
 #. Translators: Search terms to find the Sound panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/sound/budgie-sound-panel.desktop.in.in:15
+#: panels/sound/budgie-sound-panel.desktop.in.in:14
 msgid ""
 "Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 msgstr ""
 "Kortti;mikrofoni;äänenvoimakkuus;häivytys;tasapaino;Bluetooth;kuulokkeet;headset;Audio;Card;Microphone;Volume;Fade;Balance;Bluetooth;Headset;Audio;Output;Input;"
 
-#: panels/display/budgie-display-panel.desktop.in.in:4
-msgid "Choose how to use connected monitors and projectors"
-msgstr "Valitse kuinka näyttöjä ja projektoreja käsitellään"
-
-#. Translators: Search terms to find the Displays panel. Do NOT translate or
-#. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/display/budgie-display-panel.desktop.in.in:15
-msgid ""
-"Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;"
-msgstr ""
-"Panel;Projector;xrandr;Screen;Resolution;Refresh;Monitor;Night;Light;Blue;redshift;color;sunset;sunrise;Paneeli;Projektori;Näyttö;Resoluutio;Tarkkuus;Virkistystaajuus;yövalo;"
-
-#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
+#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:2
 msgid "Keyboard"
 msgstr "Näppäimistö"
 
-#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:4
+#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:3
 msgid ""
 "Change keyboard shortcuts and set your typing preferences, keyboard layouts "
 "and input sources"
@@ -8163,23 +8053,23 @@ msgstr ""
 
 #. Translators: Search terms to find the Keyboard panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:15
+#: panels/keyboard/budgie-keyboard-panel.desktop.in.in:14
 msgid ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;"
 msgstr ""
 "Shortcut;Workspace;Window;Resize;Zoom;Contrast;Input;Source;Lock;Volume;pikanäppäin;työtila;ikkuna;syöte;"
 
-#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
+#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:2
 msgid "Users"
 msgstr "Käyttäjät"
 
-#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:4
+#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:3
 msgid "Add or remove users and change your password"
 msgstr "Lisää tai poista käyttäjiä, vaihda salasanasi"
 
 #. Translators: Search terms to find the Users panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:15
+#: panels/user-accounts/data/budgie-user-accounts-panel.desktop.in.in:14
 msgid ""
 "Login;Name;Fingerprint;Avatar;Logo;Face;Password;Parental Controls;Screen "
 "Time;App Restrictions;Web Restrictions;Usage;Usage Limit;Kid;Child;"
@@ -8188,18 +8078,18 @@ msgstr ""
 "Time;App Restrictions;Web Restrictions;Usage;Usage "
 "Limit;Kid;Child;näyttöaika;ruutuaika;rajoitukset;rajat;lapsi;kirjautuminen;sormenjälki;salasana;esto;"
 
-#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
+#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:2
 #: panels/keyboard/50-accessibility.xml.in:2
 msgid "Accessibility"
 msgstr "Esteettömyys"
 
-#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:4
+#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:3
 msgid "Make it easier to see, hear, type, point and click"
 msgstr "Helpota näkemistä, kuulemista, kirjoittamista ja hiiren käyttöä"
 
 #. Translators: Search terms to find the Accessibility panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
-#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:15
+#: panels/universal-access/budgie-universal-access-panel.desktop.in.in:14
 msgid ""
 "Keyboard;Mouse;a11y;Accessibility;Universal "
 "Access;Contrast;Cursor;Sound;Zoom;Screen;Reader;big;high;large;text;font;size;AccessX;Sticky;Keys;Slow;Bounce;Mouse;Double;click;Delay;Speed;Assist;Repeat;Blink;visual;hearing;audio;typing;"
@@ -8209,81 +8099,91 @@ msgstr ""
 " jäävät näppäimet;Hitaat näppäimet;Kimmonäppäimet;Hiiren "
 "painikkeet;kaksois;viive;vilkkuminen;kuuleminen;kirjoittaminen;"
 
-#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
+#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:2
 msgid "Multitasking"
 msgstr "Moniajo"
 
-#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:4
+#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:3
 msgid "Manage preferences for productivity and multitasking"
 msgstr "Hallinnoi tuottavuuden ja moniajon asetuksia"
 
 #. Translators: Search terms to find the Search panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:15
+#: panels/multitasking/budgie-multitasking-panel.desktop.in.in:14
 msgid "Multitasking;Multitask;Productivity;Customize;Desktop;"
 msgstr ""
 "Multitasking;Multitask;Productivity;Customize;Desktop;moniajo;tuottavuus;mukautus;samanaikainen;"
 
-#: panels/applications/budgie-applications-panel.desktop.in.in:4
+#: panels/applications/budgie-applications-panel.desktop.in.in:3
 msgid "Control various application permissions and settings"
 msgstr "Hallitse sovellusten eri oikeuksia ja asetuksia"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/applications/budgie-applications-panel.desktop.in.in:16
+#: panels/applications/budgie-applications-panel.desktop.in.in:15
 msgid "application;flatpak;permission;setting;"
 msgstr ""
 "application;flatpak;permission;setting;sovellus;käyttöoikeudet;asetus;"
 
-#: panels/sharing/budgie-sharing-panel.desktop.in.in:4
+#: panels/sharing/budgie-sharing-panel.desktop.in.in:3
 msgid "Control what you want to share with others"
 msgstr "Valitse mitä haluat jakaa muiden kanssa"
 
 #. Translators: Search terms to find the Sharing panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/sharing/budgie-sharing-panel.desktop.in.in:16
+#: panels/sharing/budgie-sharing-panel.desktop.in.in:15
 msgid ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;"
 msgstr ""
 "share;sharing;ssh;host;name;remote;desktop;media;audio;video;pictures;photos;movies;server;renderer;jako;jakaminen;etä;työpöytä;ääni;video;kuvat;palvelin;"
 
-#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
+#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:2
 msgid "Removable Media"
 msgstr "Erilliset tallennusvälineet"
 
-#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:4
+#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:3
 msgid "Configure Removable Media settings"
 msgstr "Määritä erillisten tallennusvälineiden asetukset"
 
 #. Translators: Search terms to find the Removable Media panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
-#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:15
+#: panels/removable-media/budgie-removable-media-panel.desktop.in.in:14
 msgid ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "device;system;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;laite;järjestelmä;tiedot;muisti;suoritin;prosessori;versio;oletukset;sovellus;suositellut;automaattikäynnistys;ääni;irrotettava;ulkoinen;"
 
-#: panels/region/budgie-region-panel.desktop.in.in:3
+#: panels/night-light/budgie-night-light-panel.desktop.in.in:3
+msgid "Configure night light settings"
+msgstr ""
+
+#. Translators: Search terms to find the Night Light panel. Do NOT translate
+#. or localize the semicolons! The list MUST also end with a semicolon!
+#: panels/night-light/budgie-night-light-panel.desktop.in.in:14
+msgid "night;light;blue;redshift;color;sunset;sunrise;warm;screen;display;"
+msgstr ""
+
+#: panels/region/budgie-region-panel.desktop.in.in:2
 msgid "Region & Language"
 msgstr "Alue ja kielet"
 
-#: panels/region/budgie-region-panel.desktop.in.in:4
+#: panels/region/budgie-region-panel.desktop.in.in:3
 msgid "Select your display language and formats"
 msgstr "Valitse näytettävä kieli ja muotoilut"
 
 #. Translators: Search terms to find the Region and Language panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
-#: panels/region/budgie-region-panel.desktop.in.in:15
+#: panels/region/budgie-region-panel.desktop.in.in:14
 msgid "Language;Layout;Keyboard;Input;"
 msgstr "Kieli;Asettelu;Näppäimistö;Syöte;"
 
-#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
+#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:2
 msgid "About"
 msgstr "Tietoja"
 
-#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:4
+#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:3
 msgid "View information about your system"
 msgstr "Katsele järjestelmän tietoja"
 
@@ -8292,122 +8192,122 @@ msgstr "Katsele järjestelmän tietoja"
 #. The list MUST also end with a semicolon!
 #. "Preferred Applications" is the old name for the preference, so make
 #. sure that you use the same "translation" for those keywords
-#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:19
+#: panels/info-overview/budgie-info-overview-panel.desktop.in.in:18
 msgid ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;"
 msgstr ""
 "device;system;information;hostname;memory;processor;version;default;application;preferred;cd;dvd;usb;audio;video;disc;removable;media;autorun;laite;järjestelmä;tiedot;konenimi;isäntänimi;muisti;suoritin;prosessori;versio;oletus;oletukset;sovellus;suositellut;ensisijaiset;automaattikäynnistys;ääni;irrotettava;ulkoinen;erillinen;"
 
-#: panels/network/budgie-network-panel.desktop.in.in:4
+#: panels/network/budgie-network-panel.desktop.in.in:3
 msgid "Control how you connect to the Internet"
 msgstr "Hallitse internetyhteyden asetuksia"
 
 #. Translators: Search terms to find the Network panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/network/budgie-network-panel.desktop.in.in:15
+#: panels/network/budgie-network-panel.desktop.in.in:14
 msgid "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;"
 msgstr ""
 "Network;IP;LAN;Proxy;WAN;Broadband;Modem;Bluetooth;vpn;DNS;lähiverkko;välityspalvelin;laajakaista;modeemi;erillisverkko;nimipalvelu;"
 
-#: panels/network/budgie-wifi-panel.desktop.in.in:4
+#: panels/network/budgie-wifi-panel.desktop.in.in:3
 msgid "Control how you connect to Wi-Fi networks"
 msgstr "Määritä miten wifi-verkkoihin otetaan yhteys"
 
 #. Translators: Search terms to find the Wi-Fi panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/network/budgie-wifi-panel.desktop.in.in:15
+#: panels/network/budgie-wifi-panel.desktop.in.in:14
 msgid "Network;Wireless;Wi-Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;"
 msgstr ""
 "Network;Wireless;Wi-"
 "Fi;Wifi;IP;LAN;Broadband;DNS;Hotspot;verkko;langaton;laajakaista;nimipalvelu;tukiasema;"
 
-#: panels/wwan/budgie-wwan-panel.desktop.in.in:3
+#: panels/wwan/budgie-wwan-panel.desktop.in.in:2
 msgid "Mobile Network"
 msgstr "Mobiiliverkko"
 
-#: panels/wwan/budgie-wwan-panel.desktop.in.in:4
+#: panels/wwan/budgie-wwan-panel.desktop.in.in:3
 msgid "Configure Telephony and mobile data connections"
 msgstr "Määritä puhelinverkko- ja mobiilidatayhteydet"
 
 #. Translators: Search terms to find the WWAN panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/wwan/budgie-wwan-panel.desktop.in.in:16
+#: panels/wwan/budgie-wwan-panel.desktop.in.in:15
 msgid "cellular;wwan;telephony;sim;mobile;"
 msgstr "cellular;wwan;telephony;sim;mobile;mobiili;"
 
-#: panels/datetime/budgie-datetime-panel.desktop.in.in:4
+#: panels/datetime/budgie-datetime-panel.desktop.in.in:3
 msgid "Change the date and time, including time zone"
 msgstr "Vaihda aikaa, päivää tai aikavyöhykettä"
 
 #. Translators: Search terms to find the Date and Time panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
-#: panels/datetime/budgie-datetime-panel.desktop.in.in:15
+#: panels/datetime/budgie-datetime-panel.desktop.in.in:14
 msgid "Clock;Timezone;Location;"
 msgstr "Kello;Aikavyöhyke;Sijainti;"
 
-#: panels/camera/budgie-camera-panel.desktop.in.in:4
+#: panels/camera/budgie-camera-panel.desktop.in.in:3
 msgid "Protect your pictures"
 msgstr "Suojaa kuvasi"
 
 #. Translators: Search terms to find the Privacy panel. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: panels/camera/budgie-camera-panel.desktop.in.in:16
-#: panels/microphone/budgie-microphone-panel.desktop.in.in:16
+#: panels/camera/budgie-camera-panel.desktop.in.in:15
+#: panels/microphone/budgie-microphone-panel.desktop.in.in:15
 msgid ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;"
 msgstr ""
 "screen;lock;diagnostics;crash;private;recent;temporary;tmp;index;name;network;identity;näyttö;lukitus;diagnostikka;kaatuminen;yksityinen;viimeisimmät;väliaikset;nimi;verkko;identiteetti;"
 
-#: panels/notifications/budgie-notifications-panel.desktop.in.in:4
+#: panels/notifications/budgie-notifications-panel.desktop.in.in:3
 msgid "Control which notifications are displayed and what they show"
 msgstr "Hallitse näytettäviä ilmoituksia ja niiden sisältämää tietoa"
 
 #. Translators: Search terms to find the Notifications panel. Do NOT translate
 #. or localize the semicolons! The list MUST also end with a semicolon!
-#: panels/notifications/budgie-notifications-panel.desktop.in.in:15
+#: panels/notifications/budgie-notifications-panel.desktop.in.in:14
 msgid "Notifications;Banner;Message;Tray;Popup;"
 msgstr ""
 "Notifications;Banner;Message;Tray;Popup;ilmoitus;ilmoitukset;banneri;viesti;"
 
-#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
+#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:2
 msgid "Default Applications"
 msgstr "Oletussovellukset"
 
-#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:4
+#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:3
 msgid "Configure Default Applications"
 msgstr "Määritä oletussovellukset"
 
 #. Translators: Search terms to find the Default Applications panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
-#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:15
+#: panels/default-apps/budgie-default-apps-panel.desktop.in.in:14
 msgid "default;application;preferred;media;"
 msgstr "default;application;preferred;media;oletussovellus;ensisijainen;"
 
-#: panels/microphone/budgie-microphone-panel.desktop.in.in:4
+#: panels/microphone/budgie-microphone-panel.desktop.in.in:3
 msgid "Protect your conversations"
 msgstr "Suojaa keskustelusi"
 
-#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
+#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:2
 msgid "Thunderbolt"
 msgstr "Thunderbolt"
 
-#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:4
+#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:3
 msgid "Manage Thunderbolt devices"
 msgstr "Hallitse Thunderbolt-laitteita"
 
 #. Translators: those are keywords for the thunderbolt control-center panel.
 #. Do NOT translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
-#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:15
+#: panels/thunderbolt/budgie-thunderbolt-panel.desktop.in.in:14
 msgid "Thunderbolt;privacy;"
 msgstr "Thunderbolt;privacy;yksityisyys;"
 
-#: panels/mouse/budgie-mouse-panel.desktop.in.in:3
+#: panels/mouse/budgie-mouse-panel.desktop.in.in:2
 msgid "Mouse & Touchpad"
 msgstr "Hiiri ja kosketuslevy"
 
-#: panels/mouse/budgie-mouse-panel.desktop.in.in:4
+#: panels/mouse/budgie-mouse-panel.desktop.in.in:3
 msgid ""
 "Change your mouse or touchpad sensitivity and select right or left-handed"
 msgstr ""
@@ -8416,32 +8316,42 @@ msgstr ""
 #. Translators: Search terms to find the Mouse and Touchpad panel. Do NOT
 #. translate or localize the semicolons! The list MUST also end with a
 #. semicolon!
-#: panels/mouse/budgie-mouse-panel.desktop.in.in:15
+#: panels/mouse/budgie-mouse-panel.desktop.in.in:14
 msgid "Trackpad;Pointer;Click;Tap;Double;Button;Trackball;Scroll;"
 msgstr ""
 "Kosketuslevy;Trackpad;Osoitin;Kohdistin;Napsauta;Klikkaa;Painike;Nappi;Kaksois;Pallohiiri;Trackball;vieritä;Tap;Double;Button;Tuplaklikkaa;Kaksois;Scroll;"
 
-#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
+#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:2
 msgid "Diagnostics"
 msgstr "Diagnostiikka"
 
-#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:4
+#: panels/diagnostics/budgie-diagnostics-panel.desktop.in.in:3
 msgid "Report your problems"
 msgstr "Ilmoita ongelmista"
 
-#: panels/usage/budgie-usage-panel.desktop.in.in:3
+#: panels/usage/budgie-usage-panel.desktop.in.in:2
 msgid "File History & Trash"
 msgstr "Tiedostohistoria ja roskakori"
 
-#: panels/usage/budgie-usage-panel.desktop.in.in:4
+#: panels/usage/budgie-usage-panel.desktop.in.in:3
 msgid "Don't leave traces"
 msgstr "Älä jätä jälkiä"
 
-#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
+#: panels/lock/budgie-lock-panel.desktop.in.in:3
+msgid "Configure screen lock settings"
+msgstr ""
+
+#. Translators: Search terms to find the Screen Lock panel. Do NOT translate
+#. or localize the semicolons! The list MUST also end with a semicolon!
+#: panels/lock/budgie-lock-panel.desktop.in.in:14
+msgid "screen;lock;privacy;security;automatic;delay;"
+msgstr ""
+
+#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:2
 msgid "Online Accounts"
 msgstr "Verkkotilit"
 
-#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:4
+#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:3
 msgid "Connect to your online accounts and decide what to use them for"
 msgstr "Liitä verkkotilisi ja päätä, mihin tarkoituksiin niitä käytetään"
 
@@ -8450,7 +8360,7 @@ msgstr "Liitä verkkotilisi ja päätä, mihin tarkoituksiin niitä käytetään
 #. The list MUST also end with a semicolon!
 #. For ReadItLater and Pocket, see
 #. http://en.wikipedia.org/wiki/Pocket_(application)
-#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:18
+#: panels/online-accounts/budgie-online-accounts-panel.desktop.in.in:17
 msgid ""
 "Google;Facebook;Twitter;Yahoo;Web;Online;Chat;Calendar;Mail;Contact;ownCloud;Kerberos;IMAP;SMTP;Pocket;ReadItLater;"
 msgstr ""
@@ -8458,7 +8368,7 @@ msgstr ""
 
 #. Translators: Search terms to find this application. Do NOT translate or
 #. localize the semicolons! The list MUST also end with a semicolon!
-#: shell/budgie-control-center.desktop.in.in:13
+#: shell/org.buddiesofbudgie.ControlCenter.desktop.in.in:12
 msgid "Preferences;Settings;"
 msgstr "Ominaisuudet;Asetukset;Preferences;Settings;"
 
@@ -8504,19 +8414,19 @@ msgstr "Vaihda edelliseen lähteeseen"
 
 #: panels/keyboard/01-raven.xml.in:2
 msgid "Raven"
-msgstr ""
+msgstr "Raven"
 
 #: panels/keyboard/01-raven.xml.in:4
 msgid "Raven Applets"
-msgstr ""
+msgstr "Raven-sovelmat"
 
 #: panels/keyboard/01-raven.xml.in:6
 msgid "Raven Notifications"
-msgstr ""
+msgstr "Raven-ilmoitukset"
 
 #: panels/keyboard/01-raven.xml.in:8
 msgid "Clear Notifications"
-msgstr ""
+msgstr "Tyhjennä ilmoitukset"
 
 #: panels/keyboard/01-launchers.xml.in:2
 msgid "Launchers"
@@ -8617,7 +8527,7 @@ msgstr "Järjestelmä"
 
 #: panels/keyboard/01-budgie.xml.in:4
 msgid "Show the Power Dialog"
-msgstr ""
+msgstr "Näytä virtadialogi"
 
 #: panels/keyboard/01-system.xml.in:4
 msgid "Log out"
